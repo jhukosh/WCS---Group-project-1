@@ -1,19 +1,51 @@
- 
-                            /*HEADER*/
+body 
+{
+    width:100%;
+    margin: auto;
+    background-color: white ;
+    color:  #4d4d4d;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    padding-bottom: 5px;
+}
+
+#main {
+    width : inherit;
+    overflow: hidden;
+}
+
+h2{
+    margin-top:6vh;
+    margin-bottom: 6vh;
+    font-size : 4vw;
+}
+h1, h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+    text-shadow: -0.5px 0 black, 0 0.5px black,
+    0.5px 0 black, 0 -0.5px black;
+}
+
+p{
+    margin-bottom: 8vh;
+    font-size:3vh;
+    
+}
 
 /** header **/
 
-.main-header {
-    z-index: 100;
+header {
+    width : 100%;
 }
+
 header a {
     color: #f2f2f2 !important;
     font-weight: bold;
 }
 
-header a:hover {
-    color: aquamarine !important;
-}
+
 
 .navbar-brand{
     font-family: 'Open Sans', sans-serif;
@@ -22,6 +54,26 @@ header a:hover {
 .navbar {
     
     font-family: 'Montserrat', sans-serif;       
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-bottom: -10px;
+    height: 3px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .nav-link{
@@ -33,6 +85,7 @@ header a:hover {
     position: sticky;
     top: 0;
     background-color: #343a40;
+    z-index: 100;
 }
 
 .scrollinj {
@@ -42,17 +95,6 @@ header a:hover {
 
 .nwarizzeniublak {
     color: black !important;
-}
-
-.navvw{
-    margin-left: 3vw;
-}
-                            
-
-
- hr{
-    width:75%;
-    padding:15px;
 }
 /*BURGER*/
 .animated-icon1 {
@@ -124,95 +166,98 @@ top: 11px;
 -moz-transform: rotate(-135deg);
 -o-transform: rotate(-135deg);
 transform: rotate(-135deg);
-}    
+} 
 button:focus {outline:0;}
+/** section album **/
 
-/*PHOTO BACK VOYAGE*/
-#photoVoyage{
-    background-image: url("http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2017/07/liste-preparation-valise-vacances-voyage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+#mainSection {
+    width : 100vw;
+   
+}
+
+#first_album .entryAlbum .img{
+    background: url("https://d2mzw6y77zx56w.cloudfront.net/images/thailand_krabi.original.jpg") center no-repeat;
+    background-size:cover;
+    width:100vw;
+    height: 50vh;
     background-attachment: fixed;
 }
 
-#titreRecit{
-    color:white;
-    height:20vh;
-    font-size: 8vw;
-}
-#navbarCountries{
-    padding: 0;
-    background-color: transparent;
-    opacity: 0.6;
-    margin-top: 10px;
+#second_album .entryAlbum .img{
+    background: url("https://nsa40.casimages.com/img/2020/12/08/20120801545483.jpg") center no-repeat;
+    background-size:cover;
+    width:100vw;
+    height: 50vh;
+    background-attachment: fixed;
 }
 
-
-
-/*Navbar PAYS*/
-.countriesToggler { margin: 0 auto; }
-}
-ul{
-    opacity: 0.4;
-}
-/* FONT */
-body{
-   font-family: 'Montserrat', sans-serif;
-}
-.titreTypo{
-   font-family: 'Open Sans', sans-serif;
-
-}
-#navCountries .countryName{
-    color:black;
+#third_album .entryAlbum .img{
+    background: url("http://sumabeachlifestyle.com/wp-content/uploads/2016/05/Rice-Fields-in-Sapa-Vietnam.jpg") center no-repeat;
+    background-size:cover;
+    width:100vw;
+    height: 50vh;
+    background-attachment: fixed;
 }
 
-
-/* IMG HOVER */
-
-img{
-    opacity: 0.6;
- }
-
-#PresentationPicturePays1:hover img{
-    opacity: 1;
-}
-#PresentationPicturePays2:hover img{
-    opacity: 1;
-}
-#PresentationPicturePays3:hover img{
-    opacity: 1;
-}
-#PresentationPicturePays4:hover img{
-    opacity: 1;
-}
-#PresentationPicturePays5:hover img{
-    opacity: 1;
-}#PresentationPicturePays6:hover img{
-    opacity: 1;
+.entryAlbum .img{
+    margin-bottom: 6vh;
 }
 
-.picturesPays1:hover img {
-   opacity: 1;
+.entryAlbum .img h2{
+    padding-top:15vh;
+    color:#f2f2f2;
+    font-size:6vw;
+    text-shadow: 2px 2px black;
 }
 
-/*pays1*/
-.textPicturesPays1{
-    display: flex;
-    justify-content: start;
-}
-.picturesPays1{
-    display: flex;
-    justify-content:flex-end;
-}
-  
-p{
-    text-align: justify;
+.cover_albums{
+    max-width: 100%;
+    margin-bottom: 2vh;
+    height:50vh;
 }
 
-                          /*   PAYS 2  */
+@media screen and (max-width:768px){
+    .cover_albums{
+        height:30vh;
+    }
+    p{
+        margin-bottom: 6vh;
+        font-size:2vh;
+    }
+    .entryAlbum .img{
+        margin-bottom: 3vh;  
+    }
+}
 
+@media screen and (max-width:576px){
+    h1{
+        font-size:10vw;
+    }
+    .cover_albums{
+        height:20vh;
+    }
+    .entryAlbum .img h2{
+        font-size:15vw;
+    }
+    .entryAlbum .img{
+        margin-bottom: 3vh;  
+    }
+    p{
+        margin-bottom: 6vh;
+        font-size:2vh;
+    }
+    nav ul li{
+      
+        text-align: left ;
+    }
+    .row{
+        justify-content: space-around;
+    }
+    
 
+    
+}
 
 /** footer **/
 
@@ -269,11 +314,3 @@ footer ul li a i{
     padding-top: 2vh;
     font-weight: normal;
 }
-
-
-
-
-
-                           /*   PAYS2  */                             
-                  
-                          

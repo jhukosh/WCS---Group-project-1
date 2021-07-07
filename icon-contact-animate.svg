@@ -1,0 +1,13 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg" style="">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <path fill="#f2f2f2" id="canvas_background" height="402" width="582" d="M-1 -1 L581 -1 L581 401 L-1 401 Z" class="SxdsDPVm_0"></path>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" height="370" width="561" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" d="M8 10.5 L569 10.5 L569 380.5 L8 380.5 Z" class="SxdsDPVm_1"></path>
+  <path stroke-linecap="null" stroke-linejoin="null" id="svg_3" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" d="M32,48.5L287,194.5" class="SxdsDPVm_2"></path>
+  <path stroke-linecap="null" stroke-linejoin="null" id="svg_4" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" d="M293,194.5L527,49.5" class="SxdsDPVm_3"></path>
+ </g>
+<style data-made-with="vivus-instant">.SxdsDPVm_0{stroke-dasharray:1968 1970;stroke-dashoffset:1969;animation:SxdsDPVm_draw 1133ms linear 0ms forwards;}.SxdsDPVm_1{stroke-dasharray:1862 1864;stroke-dashoffset:1863;animation:SxdsDPVm_draw 1133ms linear 188ms forwards;}.SxdsDPVm_2{stroke-dasharray:294 296;stroke-dashoffset:295;animation:SxdsDPVm_draw 1133ms linear 377ms forwards;}.SxdsDPVm_3{stroke-dasharray:276 278;stroke-dashoffset:277;animation:SxdsDPVm_draw 1133ms linear 566ms forwards;}@keyframes SxdsDPVm_draw{100%{stroke-dashoffset:0;}}@keyframes SxdsDPVm_fade{0%{stroke-opacity:1;}93.22033898305085%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

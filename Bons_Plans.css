@@ -1,0 +1,257 @@
+/** header **/
+
+header a {
+    color: #f2f2f2 !important;
+    font-weight: bold;
+}
+header{
+  padding-bottom:5px;
+}
+
+
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    
+    font-family: 'Montserrat', sans-serif;       
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-bottom: -10px;
+    height: 3px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link{
+    margin-left: 3vw;
+    color: white;
+}
+.main-header{
+    transition: 500ms ease;
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    z-index: 100;
+}
+
+.scrollinj {
+    background-color: #F8F8FF;
+    color: #000000 ;
+}
+
+.nwarizzeniublak {
+    color: black !important;
+}
+
+
+.container-fluid{
+	padding:0;
+}
+
+
+/*~~~~~~~~~~~ conteneur description ~~~~~~~~~~~~~~*/
+.conteneur_descriptionPage h1{
+	text-align: center;
+	margin-top: 1.3rem;
+	color: #1a1a1a;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#imgTop{
+	background: url("https://www.lifestylia.com/wp-content/uploads/2019/11/Ober-Mamma-1536x1023.jpg") center no-repeat;
+    background-size:cover;
+    width:100vw;
+    height: 50vh;
+	background-attachment: fixed;
+	margin:0;
+}
+
+#imgTop h1{
+	margin-top:0;
+	color : #f2f2f2;
+	text-shadow: 2px 2px black;
+	padding-top: 15%;
+}
+
+.conteneur_descriptionPage p{
+	text-align: center;
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+.conteneur_descriptionPage p{
+	text-align: justify;
+	padding: 1.5rem 0 2rem 0;
+	color: #4d4d4d;
+	font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 768px){
+	.conteneur_descriptionPage p{	
+	}
+
+}
+
+/*~~~~~~~~~~~ image et description ~~~~~~~~~~~~~~~*/
+/*image*/
+img{
+	width: 82vmin;
+}
+@media (min-width: 768px){
+	.img2{
+		width: 21.44rem; 
+		height: 14rem;
+	}
+ }
+
+/*description*/
+.description_img h2{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.description_img{
+	width: 82vmin;
+	background-color: #f2f2f2;
+	padding: 2rem 1rem 1rem 1rem;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1.5rem; 
+}
+
+h4{
+	font-size: 18px;
+	text-align: center;
+}
+
+
+/*card*/
+.card{
+	margin-bottom: 3rem;
+	border: none;
+	background-color: #f7f7f7;
+}
+
+.card-header{
+	border: none;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.fa-angle-down:before {
+    content: "\f107";
+    color: black;
+    font-size: 31px;
+}
+
+.card-body {
+	padding: 1.5rem;
+	text-align: justify;
+}
+
+span{
+	font-weight: bold;
+}
+
+/*~~~~~~~~~~~~~~~~ icons ~~~~~~~~~~~~~~~~~~~~~~*/
+/*etoiles*/
+.star_icons{
+	margin-bottom: 2rem;
+}
+
+/*fleche bas*/
+.icon1{
+	background-color: #f2f2f2;
+	color: black;
+	border: none;
+	font-size: 1.6rem;
+}
+
+/** footer **/
+
+footer {
+    color: white;
+    background-color: #343a40;
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+}
+
+footer a {
+    color: #f2f2f2 !important;
+}
+
+footer ul li{
+    margin:3vh;
+}
+
+footer ul li a {
+    color: rgb(185, 164, 164);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: aquamarine !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer{
+        text-align: center;
+    }
+    footer ul{
+        margin:0;
+        padding: 0;
+    }
+    footer ul li{
+        padding-top: 1vh;
+        padding-bottom:2vh;
+        margin:0;
+    }
+    nav ul li{
+      
+        text-align: left ;
+
+    }
+}
+
+footer ul li a i{
+    font-size: 300%;
+    padding-top: 2vh;
+    font-weight: normal;
+}
+
+/* fleche */
+.rotate{
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+.rotate.down{
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+

@@ -1,0 +1,285 @@
+/** general **/
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** header **/
+
+header {
+    z-index: 100;
+}
+
+header a {
+    color: #f2f2f2 !important;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-bottom: -10px;
+    height: 3px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link{
+    margin-left: 3vw;
+    color: white;
+}
+.main-header{
+    transition: 500ms ease;
+    position: sticky;
+    top: 0;
+    background-color: #343a40;
+    z-index: 100;
+}
+
+.scrollinj {
+    background-color: #F8F8FF;
+    color: #000000 ;
+}
+
+.nwarizzeniublak {
+    color: black !important;
+}
+
+/** section image_home **/
+
+.image_fixed_home{
+    background: url("https://www.huwans-clubaventure.fr/upload_1000/Mont_Fuji_shutterstock.jpg") center no-repeat;
+    height:60vh;
+    width:100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 576px){
+    .image_fixed_home{
+        background-attachment: local;
+    }
+}
+
+/** section about us **/
+
+#avatar{
+    background: url("http://vvivante.fr/wp-content/uploads/2018/12/personnage-decoupe-01.jpg") center no-repeat;
+    background-size: cover;
+    height:30vw;
+    width:30vw;
+    border-radius: 50%;
+    border : 1px solid black;
+}
+
+.profile_text_img{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile_text_img p{
+    width:40vw;
+}
+
+@media screen and (max-width: 768px){
+    .profile_text_img{
+        display : flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    #avatar{
+        height:50vw;
+        width:50vw;
+        margin-bottom: 10vh;
+    }
+
+    .profile_text_img p{
+        width:70vw;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    #avatar{
+        height:60vw;
+        width:60vw;
+        margin-bottom: 10vh;
+    }
+}
+
+/** section cards **/
+
+.card:nth-of-type(1) .img_articles{
+    background: url("http://i2.cdn.turner.com/cnnnext/dam/assets/160823141447-japan-food22-hamamatsu-eel-hvbcjnto-super-169.jpg") center no-repeat;
+    background-size: cover;
+}
+.card:nth-of-type(2) .img_articles{
+    background: url("https://www.adventureinyou.com/wp-content/uploads/2016/05/16153836/thingtodo-indonesia-food.jpg") center no-repeat;
+    background-size: cover;
+}
+.card:nth-of-type(3) .img_articles{
+    background: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/12/14/12/moroccan-food.jpg") center no-repeat;
+    background-size: cover;
+}
+.card .img_articles{
+    height:30vh;
+    filter: blur(3px);
+}
+.card-title{
+    font-size: 18px;
+    color:#1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.card-text{
+    font-size: 14px;
+    color:#4d4d4d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* hover cards articles */
+
+.card:hover .img_articles, .card:active .img_articles{
+    filter: blur(0px);
+}
+
+#articles .row a:hover{
+    text-decoration: none;
+}
+
+#articles .row a:hover h5{
+    color:#808080;
+}
+
+#articles .row a:hover p{
+    color:#808080;
+}
+
+/** carousel **/
+
+@media screen and (min-width: 576px){
+    .instead_of_carousel{
+        display:none;
+    }
+    #carousel_albums h3{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 8vh;
+        color : #f2f2f2;
+        text-shadow: 1px 1px rgb(117, 117, 117);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel{
+        display:none;
+    }
+    .instead_of_carousel{
+        list-style-type:none;
+    }
+    #carousel_albums .instead_of_carousel li a{
+        color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #carousel_albums .instead_of_carousel li a p{
+        margin-top: 3vh; 
+    }
+    .img_phone_mode{
+        width:45vh;
+    }
+    #carousel_albums .instead_of_carousel li a:hover{
+        text-decoration: none;
+        color:#4d4d4d;
+    }
+}
+
+/** footer **/
+
+footer {
+    color: white;
+    background-color: #343a40;
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+}
+
+footer a {
+    color: #f2f2f2 !important;
+}
+
+footer ul li{
+    margin:3vh;
+}
+
+footer ul li a {
+    color: rgb(185, 164, 164);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: aquamarine !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer{
+        text-align: center;
+    }
+    footer ul{
+        margin:0;
+        padding: 0;
+    }
+    footer ul li{
+        padding-top: 1vh;
+        padding-bottom:2vh;
+        margin:0;
+    }
+    nav ul li{
+      
+        text-align: left ;
+
+    }
+}
+
+.fab {
+    font-size: 300%;
+    padding-top: 2vh;
+    font-weight: normal;
+}
+
+@-moz-document url-prefix() { 
+    .nav hr {
+      float: left; 
+    }
+  }

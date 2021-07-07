@@ -1,0 +1,314 @@
+body{
+    background-color:white;
+    font-family:"Montserrat";
+    font-weight:400;
+}
+
+/*Navbar*/
+header ul{
+padding-bottom: 5px;
+}
+header a {
+    color: #f2f2f2 !important;
+}
+
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    margin-bottom: -10px;
+    height: 3px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link{
+    margin-left: 3vw;
+}
+/*Bannière*/
+.block-titre{
+    background:linear-gradient(
+        rgba(7, 11, 78, 0.45), 
+        rgba(7, 11, 78, 0.45))
+    ,url("https://i.ibb.co/rcXC8KT/bg-contact2.jpg"),no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+}
+
+.titre-baniere{
+    font-family:"Open Sans" ;
+    color:white;
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);   
+}
+.block-titre{
+    position: relative;
+    text-align: center; 
+}
+/*About us */
+.aboutus{
+    margin-top:10vh;
+    background-color: white;
+    margin-bottom:10vh;
+    padding-left:30px;
+}
+.aboutus img{
+    float:left;
+}
+.aboutus h4{
+    font-size:18px;
+    font-weight:600;
+    font-family:"Open Sans";
+    color:#343a40;
+}
+.aboutusp{
+    padding-left:50px;
+}
+/*Contact*/
+.contact-form{
+    background:#f2f2f2;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:5px;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    width: 11%;
+    margin-top: 20px;
+
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -15%;
+    text-align: center;
+    color: #1a1a1a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 2.5%;
+    background: #343a40;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    
+    
+}
+.button-submit
+{
+    width: 50%; 
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+}
+.button-submit:hover{
+    background-color:grey;
+
+}
+textarea{
+    resize:none;
+}
+/*Contact animation css*/
+/*input*/
+.wrap-input100 {
+width: 100%;
+position: relative;
+border-bottom: 2px solid #d9d9d9;
+padding-bottom: 2px;
+
+}
+.focus-input100 {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+
+.focus-input100::before {
+content: "";
+display: block;
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0;
+height: 2px;
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+background: rgb(50, 27, 104);
+}
+.input100{
+    border:none;
+    background:transparent;
+    margin-bottom:10px;   
+}
+.box-message{
+    background: none;
+    border:2px solid #d3d3d3;
+    padding:5px;
+}
+
+/*---------------------------------------------*/
+.input100:focus + .focus-input100::before {
+width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+width: 100%;
+}
+/*bouton submit*/
+
+
+.contact100-form-btn {
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 20px;
+min-width: 160px;
+height: 50px;
+background-color: #42276d;
+border-radius: 25px;
+font-family: "Open Sans";
+font-size: 16px;
+color: #fff;
+line-height: 1.2;
+
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+
+box-shadow: 0 10px 30px 0px  rgb(50, 27, 104, 0.5);
+-moz-box-shadow: 0 10px 30px 0px  rgb(50, 27, 104, 0.5);
+-webkit-box-shadow: 0 10px 30px 0px  rgb(50, 27, 104, 0.5);
+-o-box-shadow: 0 10px 30px 0px  rgb(50, 27, 104), 0.5;
+-ms-box-shadow: 0 10px 30px 0px  rgb(50, 27, 104, 0.5);
+}
+.contact100-form-btn i {
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+-moz-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+background-color: #333333;
+box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+-moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+-webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+-o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+-ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
+
+.contact100-form-btn:hover i {
+-webkit-transform: translateX(10px);
+-moz-transform: translateX(10px);
+-ms-transform: translateX(10px);
+-o-transform: translateX(10px);
+transform: translateX(10px);
+}
+        /**/
+.image-full{
+    max-width: 100%;
+    background: linear-gradient(
+        rgba(7, 11, 78, 0.45), 
+        rgba(7, 11, 78, 0.45)
+        ),url("https://i.ibb.co/9rDN81Z/stefan-stefancik-105376-unsplash.jpg")no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    height:400px;
+    width: 100%;
+}
+
+/** footer **/
+
+footer {
+    color: white;
+    background-color: #343a40;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer a {
+    color: #f2f2f2 !important;
+}
+
+footer ul li{
+    margin:3vh;
+}
+
+footer ul li a {
+    color: rgb(185, 164, 164);
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: aquamarine !important;
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        text-align: center;
+    }
+    footer ul{
+        margin:0;
+        padding: 0;
+    }
+    footer ul li{
+        padding-top: 1vh;
+        padding-bottom:2vh;
+        margin:0;
+    }
+}
+
+
+
+
